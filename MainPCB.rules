@@ -1,0 +1,106 @@
+
+(rules PCB MainPCB
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2004)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clearance 200.2)
+    (clearance 125.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.2 (type "kicad_default"))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(D1-A)" 5V "RX2->TX" "TX2->RX" 3.3V ESC "Net-(J3-Pin_2)"
+    Kicker TRIG1 ECHO1 TRIG2 ECHO2 TRIG3 ECHO3 TRIG4
+    ECHO4 CS3 CS2 MOSI MISO SCK1 CS1 CS4
+    CS5 CS6 "RX4->TX" "TX4->RX" 12V "Net-(M1-+)" "Net-(M1--)" "Net-(M2-+)"
+    "Net-(M2--)" "Net-(M3-+)" "Net-(M3--)" "Net-(M4-+)" "Net-(M4--)" LightGate LEDPulse "Net-(U6-OUT)"
+    SLIDE1 "unconnected-(SW1-C-Pad3)" SLIDE2 "unconnected-(SW2-C-Pad3)" SLIDE3 "unconnected-(SW3-C-Pad3)" SLIDE4 "unconnected-(SW4-C-Pad3)"
+    SLIDE6 "unconnected-(SW5-C-Pad3)" SLIDE7 "unconnected-(SW6-C-Pad3)" SLIDE5 "unconnected-(SW7-C-Pad3)" "unconnected-(U1-VUSB-Pad49)" "unconnected-(U1-GND-Pad59)"
+    "unconnected-(U1-GND-Pad58)" "unconnected-(U1-D+-Pad57)" "unconnected-(U1-D--Pad56)" "unconnected-(U1-5V-Pad55)" DIR1B DIR1A DIR2B DIR2A
+    DIR3B DIR3A PWM1 PWM2 PWM3 PWM4 DIR4A DIR4B
+    "unconnected-(U1-33_MCLK2-Pad25)" STATE "TX7 -> RX" "unconnected-(U1-3V3-Pad15)" SCL2 "RX7 -> TX" SDA2 "unconnected-(U1-R+-Pad60)"
+    "unconnected-(U1-R--Pad65)" "unconnected-(U1-LED-Pad61)" "unconnected-(U1-GND-Pad64)" "unconnected-(U1-T+-Pad63)" "unconnected-(U1-T--Pad62)" "unconnected-(U1-VBAT-Pad50)" "unconnected-(U1-3V3-Pad51)" "unconnected-(U1-GND-Pad52)"
+    "unconnected-(U1-PROGRAM-Pad53)" "unconnected-(U1-ON_OFF-Pad54)" "unconnected-(U1-D+-Pad67)" "unconnected-(U1-D--Pad66)" "unconnected-(J5-Pin_1-Pad1)" 3.3v
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
