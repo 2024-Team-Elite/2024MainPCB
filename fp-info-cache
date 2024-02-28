@@ -1,4 +1,4 @@
-21896357332478935
+21899775499160654
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -83369,6 +83369,13 @@ Resistor Radial_Power series Radial pin pitch 7.37mm 10W length 16.1mm width 9mm
 0
 2
 2
+RockerSwitch
+DA102J12S215PQF
+
+
+0
+2
+2
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
@@ -83947,6 +83954,13 @@ Sensor_Voltage
 LEM_LV25-P
 LEM LV25-P Voltage transducer, https://www.lem.com/sites/default/files/products_datasheets/lv_25-p.pdf
 LEM Hall Effect Voltage transducer
+0
+5
+5
+SlideSW
+SPDT_OS102011_CNK
+
+OS102011MS2QN1 
 0
 5
 5
