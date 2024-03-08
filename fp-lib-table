@@ -4,4 +4,5 @@
   (lib (name "SlideSW")(type "KiCad")(uri "${KIPRJMOD}/SlideSW.pretty")(options "")(descr ""))
   (lib (name "teensy")(type "KiCad")(uri "${KIPRJMOD}/teensy.pretty")(options "")(descr ""))
   (lib (name "RockerSwitch")(type "KiCad")(uri "${KIPRJMOD}/RockerSwitch.pretty")(options "")(descr ""))
+  (lib (name "Custom")(type "KiCad")(uri "${KIPRJMOD}/Custom.pretty")(options "")(descr ""))
 )
