@@ -180,6 +180,7 @@
       ],
       "track_widths": [
         0.0,
+        0.4,
         1.0,
         1.5,
         2.0,
@@ -484,7 +485,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "MainPCB.dsn",
       "step": "",
