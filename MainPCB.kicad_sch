@@ -5662,7 +5662,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 228.6) (xy 40.64 228.6)
+			(xy 38.1 228.6) (xy 40.64 228.6)
 		)
 		(stroke
 			(width 0)
@@ -7954,7 +7954,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 39.37 228.6 180)
+		(at 38.1 228.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7964,7 +7964,7 @@
 		)
 		(uuid "b45658ad-f4ed-4a46-8ada-8beda714fb67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.0867 228.6 0)
+			(at 32.8167 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
